@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cec6ff98-5d5b-48fb-a74f-0e310502be36}</ProjectGuid>
+    <RootNamespace>x86cheats</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\PC\Desktop\x86-Cheats\cheat\DiscordSDK\include;C:\Users\PC\Desktop\x86-Cheats\cheat\DiscordSDK\src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cheat\bhop.h" />
+    <ClInclude Include="cheat\DiscordSDK\include\discord_register.h" />
+    <ClInclude Include="cheat\DiscordSDK\include\discord_rpc.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\backoff.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\connection.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\msg_queue.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\allocators.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\document.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\encodedstream.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\encodings.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\error\en.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\error\error.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\filereadstream.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\filewritestream.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\fwd.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\itoa.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\meta.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\pow10.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\regex.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\stack.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\strtod.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\internal\swap.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\memorybuffer.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\memorystream.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\pointer.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\prettywriter.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\rapidjson.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\reader.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\schema.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\stream.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\stringbuffer.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rapidjson\writer.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\rpc_connection.h" />
+    <ClInclude Include="cheat\DiscordSDK\src\serialization.h" />
+    <ClInclude Include="cheat\gui.h" />
+    <ClInclude Include="cheat\hax.h" />
+    <ClInclude Include="cheat\memory.h" />
+    <ClInclude Include="cheat\offsets.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cheat\bhop.cpp" />
+    <ClCompile Include="cheat\DiscordSDK\src\connection_win.cpp" />
+    <ClCompile Include="cheat\DiscordSDK\src\discord_register_win.cpp" />
+    <ClCompile Include="cheat\DiscordSDK\src\discord_rpc.cpp" />
+    <ClCompile Include="cheat\DiscordSDK\src\dllmain.cpp" />
+    <ClCompile Include="cheat\DiscordSDK\src\rpc_connection.cpp" />
+    <ClCompile Include="cheat\DiscordSDK\src\serialization.cpp" />
+    <ClCompile Include="cheat\gui.cpp" />
+    <ClCompile Include="cheat\hax.cpp" />
+    <ClCompile Include="cheat\ImGuiName.cpp" />
+    <ClCompile Include="cheat\main.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="cheat\DiscordSDK\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cheat\DiscordSDK\src\discord_register_osx.m" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
